@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE repositories SYSTEM "http://www.gentoo.org/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+    <repo quality="experimental" status="unofficial">
+        <name>heindsight</name>
+        <description lang="en">Heinrich Kruger's personal overlay</description>
+        <homepage>https://github.com/heindsight/gentoo_overlay</homepage>
+        <owner type="person">
+            <email>heindsight@kruger.dev</email>
+            <name>Heinrich Kruger</name>
+        </owner>
+        <source type="git">https://github.com/heindsight/gentoo_overlay.git</source>
+        <source type="git">git+ssh://git@github.com/heindsight/gentoo_overlay.git</source>
+        <feed>https://github.com/heindsight/gentoo_overlay/commits/master.atom</feed>
+    </repo>
+</repositories>
