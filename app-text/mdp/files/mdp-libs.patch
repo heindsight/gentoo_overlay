@@ -1,0 +1,18 @@
+--- a/Makefile
++++ b/Makefile
+@@ -44,12 +44,13 @@
+ 	LDFLAGS :=
+ endif
+ 
+-LDLIBS   = -l$(CURSES)
++LIBS   ?= -l$(CURSES)
+ 
+ all: $(TARGET)
+ 
+ $(TARGET): src
+-	$(CC) $(OBJECTS) $(LDLIBS) $(LDFLAGS) -o $(TARGET)
++	echo $(CC) $(OBJECTS) $(LIBS) $(LDFLAGS) -o $(TARGET)
++	$(CC) $(OBJECTS) $(LIBS) $(LDFLAGS) -o $(TARGET)
+ 
+ src:
+ 	$(MAKE) $(MFLAGS) -C src

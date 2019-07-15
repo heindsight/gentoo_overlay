@@ -23,10 +23,13 @@ DEPEND="sys-libs/ncurses:0"
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
 
-src_compile() {
+PATCHES=(
+	"${FILESDIR}/${PN}-libs.patch"
+)
+
+src_configure() {
 	append-cflags $(pkg-config --cflags ncursesw)
-	append-ldflags $(pkg-config --libs ncursesw)
-	default
+	append-libs $(pkg-config --libs ncursesw)
 }
 
 src_install() {
