@@ -104,3 +104,12 @@ IUSE=""
 DEPEND=""
 RDEPEND=""
 BDEPEND=">=virtual/rust-1.31.0"
+
+src_install() {
+	cargo_src_install --path="."
+
+	insinto /usr/share/hyperfine/scripts
+	doins -r scripts/*
+
+	einstalldocs
+}
