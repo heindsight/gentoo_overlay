@@ -103,8 +103,6 @@ src_install() {
 }
 
 pkg_postinst() {
-	default
-
-	elog "To make use of the scripts in '/usr/share/hyperfine/scripts',"
-	elog "you will need to install both 'numpy' and 'matplotlib'"
+	ewarn "To make use of the scripts in '${EPREFIX%/}/usr/share/hyperfine/scripts',"
+	ewarn "you will need to install both 'numpy' and 'matplotlib'"
 }
