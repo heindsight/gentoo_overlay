@@ -3,7 +3,7 @@
 <repositories xmlns="" version="1.0">
     <repo quality="experimental" status="unofficial">
         <name>heindsight</name>
-        <description lang="en">Heinrich Kruger's personal overlay</description>
+        <description lang="en">heindsight's personal overlay</description>
         <homepage>https://github.com/heindsight/gentoo_overlay</homepage>
         <owner type="person">
             <email>heindsight@kruger.dev</email>
