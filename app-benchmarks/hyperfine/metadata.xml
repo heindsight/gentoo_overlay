@@ -5,4 +5,7 @@
 	<email>heindsight@kruger.dev</email>
 	<name>Heinrich Kruger</name>
 </maintainer>
+<use>
+	<flag name="fish-completion">Enable fish completion support</flag>
+</use>
 </pkgmetadata>

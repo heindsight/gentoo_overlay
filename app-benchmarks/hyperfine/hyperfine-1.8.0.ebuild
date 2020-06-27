@@ -94,7 +94,7 @@ RDEPEND=""
 BDEPEND=">=virtual/rust-1.31.0"
 
 src_install() {
-	cargo_src_install --path="."
+	cargo_src_install
 
 	insinto /usr/share/hyperfine/scripts
 	doins -r scripts/*
@@ -103,6 +103,5 @@ src_install() {
 }
 
 pkg_postinst() {
-	ewarn "To make use of the scripts in '${EPREFIX%/}/usr/share/hyperfine/scripts',"
-	ewarn "you will need to install both 'numpy' and 'matplotlib'"
+	elog "You will need to install both 'numpy' and 'matplotlib' to make use of the scripts in '${EROOT%/}/usr/share/hyperfine/scripts'."
 }
